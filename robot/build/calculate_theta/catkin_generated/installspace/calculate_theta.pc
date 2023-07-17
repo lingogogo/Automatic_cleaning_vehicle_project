@@ -1,0 +1,8 @@
+prefix=/home/gordonlin/robot/install
+
+Name: calculate_theta
+Description: Description of calculate_theta
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

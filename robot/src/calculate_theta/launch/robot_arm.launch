@@ -1,0 +1,3 @@
+<launch>
+  <node name="calculate_arm" pkg="calculate_theta" type="calculate_arm_theta"/> 
+</launch>

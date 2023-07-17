@@ -1,0 +1,5 @@
+<launch>
+  <node name="get_data_yolov3" pkg="dataget" type="get_data_yolov3.py"/>
+  <node name="find_near_target" pkg="dataget" type="find_nearest_target"/>
+  <node name="trash_coordinate" pkg="dataget" type="trash_coordinate"/>
+</launch>

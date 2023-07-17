@@ -1,0 +1,8 @@
+prefix=/home/gordonlin/robot/devel
+
+Name: total_startup
+Description: Description of total_startup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

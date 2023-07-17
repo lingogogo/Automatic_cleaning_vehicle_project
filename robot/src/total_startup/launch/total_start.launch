@@ -1,0 +1,17 @@
+
+<launch>
+  <include file="$(find dataget)/launch/start_point.launch">
+  </include>
+  <include file="$(find calculate_theta)/launch/robot_arm.launch">
+  </include>
+
+
+  <node name="motor_control"   pkg="rosserial_python" type="serial_node.py">
+  <param name="port"         type="string"          value="/dev/ttyUSB0"/>
+  <param name="baud"         type="int"          value="57600"/>  
+  </node>
+  <node name="robotic_arm_with_sensor"   pkg="rosserial_python" type="serial_node.py">
+  <param name="port"         type="string"          value="/dev/ttyACM0"/>
+  <param name="baud"         type="int"          value="57600"/>  
+  </node>
+</launch>

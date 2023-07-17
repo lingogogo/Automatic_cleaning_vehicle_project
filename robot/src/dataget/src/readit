@@ -1,0 +1,6 @@
+trash_coordinate:when the robot arm is ready to take the object
+	topic:
+get_Data_yolov3:take data from pi camera
+	topic:data_from_yolov3
+find_nearest_target:the object is closest to the robot
+	topic:send_the_next_target_INFO,image_centerline_distance

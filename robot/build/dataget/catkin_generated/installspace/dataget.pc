@@ -1,0 +1,8 @@
+prefix=/home/gordonlin/robot/install
+
+Name: dataget
+Description: Description of dataget
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldataget
+Requires: message_runtime

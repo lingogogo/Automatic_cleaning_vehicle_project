@@ -1,0 +1,8 @@
+prefix=/home/gordonlin/robot/devel
+
+Name: tf2_msgs
+Description: Description of tf2_msgs
+Version: 0.6.5
+Cflags: -I/home/gordonlin/robot/devel/include -I/home/gordonlin/robot/src/geometry2/tf2_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_generation geometry_msgs actionlib_msgs

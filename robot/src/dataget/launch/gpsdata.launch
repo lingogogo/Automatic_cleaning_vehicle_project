@@ -1,0 +1,10 @@
+<launch>
+  <node name="GPS_vector" pkg="dataget" type="gps_vector"/>
+
+  <node name="robot_bodycoordinate" pkg="dataget" type="gpsbodycoordinate" >
+    <param name="port4"  type="string"  value="/dev/ttyACM1"/>
+  </node>
+  <node name="imubodycoordinate" pkg="dataget" type="imuandbodycoordinate" >
+    <param name="port5"  type="string"  value="/dev/ttyACM1"/>
+  </node>
+</launch>
